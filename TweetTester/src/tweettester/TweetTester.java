@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tweettester;
 
 import java.util.Scanner;
 import java.lang.Math; 
 /**
  * @class  AP CSA
- * @author INSERT YOUR NAME HERE
+ * @author Alex Baker
  */
 public class TweetTester {
 
@@ -19,8 +14,17 @@ public class TweetTester {
     public static void main(String[] args) {
         
         Scanner scan = new Scanner (System.in);
-         String tweet;
-         
+        String tweet;
+        //tweet is now a declared as a string
+        tweet = scan.nextLine();
+        //this line asks the user for input
+        System.out.println(tweet.length());
+        //It prints the number of characters, regardless of type.--This includes spaces, commas, brackets, numbers, letters, etc.
+        
+        if(tweet.length() > 140)
+        {
+            System.out.println("Please shorten your message. Try removing any unnecessary content.");
+        }
     }
     
 }
